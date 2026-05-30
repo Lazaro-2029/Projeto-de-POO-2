@@ -1,4 +1,5 @@
 package br.org.editora.model.DAO;
+import br.org.editora.model.entities.Autor;
 import java.net.URL;
 import java.sql.*;
 

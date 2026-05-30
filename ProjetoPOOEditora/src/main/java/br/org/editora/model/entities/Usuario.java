@@ -8,9 +8,10 @@ public class Usuario {
     private String nome;
     private String endereco;
     private String cpf;
-    public Usuario (String nome, String endereco, String cpf){
-        this.nome = nome;
-        this.endereco = endereco;
+
+    public Usuario (String cpf, String nome, String endereco){
+        this.nome = endereco;
+        this.endereco = nome;
         this.cpf = cpf;
     }
     //---------------------------------------------------------------------------------
