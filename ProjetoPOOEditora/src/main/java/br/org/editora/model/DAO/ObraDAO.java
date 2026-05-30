@@ -68,7 +68,6 @@ public class ObraDAO {
         return obra;
     }
 
-    // ─── BUSCAR POR ID ────────────────────────────────────────────────────────
     public Obra buscarPorId(int id) {
         con = getConnection();
         String sql = "SELECT o.titulo, o.genero, o.ano, o.status, o.data_avaliacao, "
@@ -90,7 +89,6 @@ public class ObraDAO {
         return null;
     }
 
-    // ─── BUSCAR POR TÍTULO ────────────────────────────────────────────────────
     public List<Obra> buscarPorTitulo(String titulo) {
         con = getConnection();
         List<Obra> lista = new ArrayList<>();
@@ -111,7 +109,6 @@ public class ObraDAO {
         return lista;
     }
 
-    // ─── BUSCAR POR STATUS ────────────────────────────────────────────────────
     public List<Obra> buscarPorStatus(String status) {
         con = getConnection();
         List<Obra> lista = new ArrayList<>();
@@ -132,7 +129,6 @@ public class ObraDAO {
         return lista;
     }
 
-    // ─── BUSCAR POR AUTOR (CPF) ───────────────────────────────────────────────
     public List<Obra> buscarPorAutor(String cpfAutor) {
         con = getConnection();
         List<Obra> lista = new ArrayList<>();
@@ -153,7 +149,6 @@ public class ObraDAO {
         return lista;
     }
 
-    // ─── LISTAR TODAS ─────────────────────────────────────────────────────────
     public List<Obra> listarTodas() {
         con = getConnection();
         List<Obra> lista = new ArrayList<>();
@@ -172,7 +167,6 @@ public class ObraDAO {
         return lista;
     }
 
-    // ─── ATUALIZAR STATUS ─────────────────────────────────────────────────────
     public void atualizarStatus(int id, String novoStatus, LocalDate dataAvaliacao) {
         con = getConnection();
         String sql = "UPDATE obra SET status = ?, data_avaliacao = ? WHERE id = ?";
@@ -186,7 +180,6 @@ public class ObraDAO {
         } catch (SQLException e) { e.printStackTrace(); }
     }
 
-    // ─── ATRIBUIR AVALIADOR ───────────────────────────────────────────────────
     public void atribuirAvaliador(int idObra, String cpfAvaliador) {
         con = getConnection();
         String sql = "UPDATE obra SET cpf_avaliador = ? WHERE id = ?";
@@ -199,7 +192,6 @@ public class ObraDAO {
         } catch (SQLException e) { e.printStackTrace(); }
     }
 
-    // ─── ATUALIZAR DADOS (título, gênero, ano) ────────────────────────────────
     public void atualizar(int id, String titulo, String genero, int ano) {
         con = getConnection();
         String sql = "UPDATE obra SET titulo = ?, genero = ?, ano = ? WHERE id = ?";
@@ -214,7 +206,6 @@ public class ObraDAO {
         } catch (SQLException e) { e.printStackTrace(); }
     }
 
-    // ─── EXCLUIR ──────────────────────────────────────────────────────────────
     public void excluir(int id) {
         con = getConnection();
         String sql = "DELETE FROM obra WHERE id = ?";
@@ -226,7 +217,6 @@ public class ObraDAO {
         } catch (SQLException e) { e.printStackTrace(); }
     }
 
-    // ─── MÉTODO AUXILIAR: montar Obra a partir do ResultSet ───────────────────
     private Obra construirObra(ResultSet rs) throws SQLException {
         Usuario usuarioAutor = new Usuario(
             rs.getString("cpf_autor"),
