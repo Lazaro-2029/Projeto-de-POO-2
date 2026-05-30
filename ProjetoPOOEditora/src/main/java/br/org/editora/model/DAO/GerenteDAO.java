@@ -1,13 +1,11 @@
 package br.org.editora.model.DAO;
-import br.org.editora.exceptions.SemCPFException;
-import br.org.editora.exceptions.SemEnderecoException;
-import br.org.editora.exceptions.SemNomeException;
+import br.org.editora.model.entities.Gerente;
 import br.org.editora.model.entities.Usuario;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UsuarioDAO {
+public class GerenteDAO {
     private final static String URL  = "jdbc:mysql://localhost/projetopoo";
     private final static String USER = "root";
     private final static String PASS = "#Projeto21";
@@ -30,110 +28,91 @@ public class UsuarioDAO {
         }
     }
 
-    public Usuario inserir(Usuario entity) {
+    public Gerente inserir(Gerente gerente) {
         con = getConnection();
-        String sql = "INSERT INTO usuario (cpf, nome, endereco) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO gerente (cpf_usuario) VALUES (?)";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, entity.getCpf());
-            ps.setString(2, entity.getNome());
-            ps.setString(3, entity.getEndereco());
+            ps.setString(1, gerente.getGerente().getCpf());
             ps.execute();
             ps.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return entity;
+        } catch (SQLException e) { e.printStackTrace(); }
+        return gerente;
     }
 
-    public Usuario buscarPorCpf(String cpf) {
+    public Gerente buscarPorCpf(String cpf) {
         con = getConnection();
-        String sql = "SELECT cpf, nome, endereco FROM usuario WHERE cpf = ?";
+        String sql = "SELECT u.cpf, u.nome, u.endereco "
+                   + "FROM gerente g "
+                   + "JOIN usuario u ON g.cpf_usuario = u.cpf "
+                   + "WHERE g.cpf_usuario = ?";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, cpf);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                Usuario u = new Usuario(
+                Usuario usuario = new Usuario(
                     rs.getString("cpf"),
                     rs.getString("nome"),
                     rs.getString("endereco")
                 );
                 ps.close();
-                return u;
+                return new Gerente(usuario);
             }
             ps.close();
         } catch (SQLException e) { e.printStackTrace(); }
         return null;
     }
 
-    public Usuario buscarPorNome(String nome) {
+    public Gerente buscarPorNome(String nome) {
         con = getConnection();
-        String sql = "SELECT cpf, nome, endereco FROM usuario WHERE nome = ?";
+        String sql = "SELECT u.cpf, u.nome, u.endereco "
+                   + "FROM gerente g "
+                   + "JOIN usuario u ON g.cpf_usuario = u.cpf "
+                   + "WHERE u.nome = ?";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, nome);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                Usuario u = new Usuario(
+                Usuario usuario = new Usuario(
                     rs.getString("cpf"),
                     rs.getString("nome"),
                     rs.getString("endereco")
                 );
                 ps.close();
-                return u;
+                return new Gerente(usuario);
             }
             ps.close();
         } catch (SQLException e) { e.printStackTrace(); }
         return null;
     }
 
-    public List<Usuario> listarTodos() {
+    public List<Gerente> listarTodos() {
         con = getConnection();
-        List<Usuario> lista = new ArrayList<>();
-        String sql = "SELECT cpf, nome, endereco FROM usuario";
+        List<Gerente> lista = new ArrayList<>();
+        String sql = "SELECT u.cpf, u.nome, u.endereco "
+                   + "FROM gerente g "
+                   + "JOIN usuario u ON g.cpf_usuario = u.cpf";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                lista.add(new Usuario(
+                Usuario usuario = new Usuario(
                     rs.getString("cpf"),
                     rs.getString("nome"),
                     rs.getString("endereco")
-                ));
+                );
+                lista.add(new Gerente(usuario));
             }
             ps.close();
         } catch (SQLException e) { e.printStackTrace(); }
         return lista;
     }
 
-    public void atualizarNome(String cpf, String novoNome) {
-        con = getConnection();
-        String sql = "UPDATE usuario SET nome = ? WHERE cpf = ?";
-        try {
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, novoNome);
-            ps.setString(2, cpf);
-            ps.execute();
-            ps.close();
-        } catch (SQLException e) { e.printStackTrace(); }
-    }
-
-    public void atualizarEndereco(String cpf, String novoEndereco) {
-        con = getConnection();
-        String sql = "UPDATE usuario SET endereco = ? WHERE cpf = ?";
-        try {
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, novoEndereco);
-            ps.setString(2, cpf);
-            ps.execute();
-            ps.close();
-        } catch (SQLException e) { e.printStackTrace(); }
-    }
-
     public void excluir(String cpf) {
         con = getConnection();
-        String sql = "DELETE FROM usuario WHERE cpf = ?";
+        String sql = "DELETE FROM gerente WHERE cpf_usuario = ?";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, cpf);
