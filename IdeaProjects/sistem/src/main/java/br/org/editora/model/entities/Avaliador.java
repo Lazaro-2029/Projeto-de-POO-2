@@ -2,7 +2,7 @@ package br.org.editora.model.entities;
 import java.util.ArrayList;
 import java.time.LocalDate;
 
-class Avaliador {
+public class Avaliador {
     private Usuario usuarioAvaliador;
     private ArrayList<Obra> obrasAvaliadas;
 

@@ -3,7 +3,7 @@ import br.org.editora.exeptions.SemNomeException;
 import br.org.editora.exeptions.SemEnderecoException;
 import br.org.editora.exeptions.SemCPFException;
 
-class Usuario {
+public class Usuario {
 
     private String nome;
     private String endereco;

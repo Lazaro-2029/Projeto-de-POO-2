@@ -1,5 +1,6 @@
 package br.org.editora.model.entities;
-class Relatorio {
+
+public class Relatorio {
 
     public void totalObras(SystemSearch sistema){
         System.out.println("Total de obras cadastradas: " + sistema.getObras().size());

@@ -1,7 +1,7 @@
 package br.org.editora.model.entities;
 import java.util.ArrayList;
 
-class SystemSearch {
+public class SystemSearch {
     private ArrayList<Obra> obrasGuardadas;
     private ArrayList<Autor>autoresGuardados;
     private ArrayList<Avaliador> avaliadoresGuardados;

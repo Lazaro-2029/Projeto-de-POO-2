@@ -2,7 +2,7 @@ package br.org.editora.model.entities;
 import java.util.ArrayList;
 
 
-class Autor {
+public class Autor {
     private Usuario user;
     private ArrayList<Obra> obras;
 

@@ -1,5 +1,6 @@
 package br.org.editora.model.entities;
-class Gerente {
+
+public class Gerente {
     private Usuario usergerente;
 
     public Gerente(Usuario gerente){

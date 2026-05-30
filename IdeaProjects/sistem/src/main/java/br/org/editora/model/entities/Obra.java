@@ -6,7 +6,7 @@ import br.org.editora.exeptions.SemGeneroException;
 import br.org.editora.exeptions.SemAutorException;
 
 
-class Obra {
+public class Obra {
     private String titulo;
     private String genero;
     private int ano;
