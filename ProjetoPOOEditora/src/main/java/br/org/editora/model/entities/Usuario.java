@@ -10,8 +10,8 @@ public class Usuario {
     private String cpf;
 
     public Usuario (String cpf, String nome, String endereco){
-        this.nome = endereco;
-        this.endereco = nome;
+        this.nome = nome;
+        this.endereco = endereco;
         this.cpf = cpf;
     }
     //---------------------------------------------------------------------------------

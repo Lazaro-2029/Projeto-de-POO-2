@@ -10,7 +10,7 @@ import java.util.List;
 public class SystemSearchDAO {
     private final static String URL  = "jdbc:mysql://localhost/projetopoo";
     private final static String USER = "root";
-    private final static String PASS = "#Projeto21";
+    private final static String PASS = "1234";
     private static Connection con = null;
 
     public static Connection getConnection() {
