@@ -17,7 +17,7 @@ public class AvaliadorService {
 
         if (existente != null) {
             throw new RuntimeException(
-                    "Já existe um avaliador cadastrado com esse CPF."
+                    "Já existe um avaliado r cadastrado com esse CPF."
             );
         }
 

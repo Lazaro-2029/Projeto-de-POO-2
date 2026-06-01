@@ -30,7 +30,7 @@ public class ObraService {
         }
 
         if (obra.getAutor() == null) {
-            throw new SemAutorException("Autor inválido!");
+            throw new SemAutorException("Autor  inválido!");
         }
 
         verificar(obra);

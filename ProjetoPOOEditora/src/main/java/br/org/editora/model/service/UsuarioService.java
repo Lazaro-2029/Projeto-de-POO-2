@@ -21,7 +21,7 @@ public class UsuarioService {
 
         if(existente != null){
             throw new RuntimeException(
-                    "Já existe um usuário com esse CPF."
+                    "Já existe um usuário co m esse CPF."
             );
         }
 

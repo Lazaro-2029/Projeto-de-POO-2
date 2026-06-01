@@ -68,7 +68,7 @@ public class RelatorioService {
         System.out.println("Total de autores: "
                 + dao.totalAutores());
 
-        System.out.println("Total de avaliadores: "
+        System.out.println("Total de avaliadores : "
                 + dao.totalAvaliadores());
 
         System.out.println("--------------------------------------");

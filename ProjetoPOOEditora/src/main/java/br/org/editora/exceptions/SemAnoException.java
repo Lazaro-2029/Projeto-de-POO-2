@@ -4,4 +4,5 @@ public class SemAnoException extends RuntimeException {
     public SemAnoException(String message) {
         super(message);
     }
+
 }

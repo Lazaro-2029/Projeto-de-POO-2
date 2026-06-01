@@ -16,7 +16,7 @@ public class AutorService {
         Autor existente = dao.buscarPorCpf(usuario.getCpf());
 
         if (existente != null) {
-            throw new RuntimeException("Já existe um autor cadastrado com esse CPF.");
+            throw new RuntimeException("Já existe um  autor cadastrado com esse CPF.");
         }
 
         Autor autor = new Autor(usuario);

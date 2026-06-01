@@ -17,7 +17,7 @@ public class GerenteService {
 
         if (existente != null) {
             throw new RuntimeException(
-                    "Já existe um gerente cadastrado com esse CPF."
+                    "Já existe um gerente  cadastrado com esse CPF."
             );
         }
 
