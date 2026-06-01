@@ -92,4 +92,8 @@ public class Gerente {
     public void exibirGerente(){
         usergerente.exibirDados();
     }
+    //=========================================================
+    public void setAvaliadorResponsavel(Avaliador avaliadorResponsavel) {
+        this.avaliadorResponsavel = avaliadorResponsavel;
+    }
 }

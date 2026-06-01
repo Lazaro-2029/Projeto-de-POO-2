@@ -33,9 +33,7 @@ public class Obra {
 
     }
 
-    public void setAvaliadorResponsavel(Avaliador avaliadorResponsavel) {
-        this.avaliadorResponsavel = avaliadorResponsavel;
-    }
+    
 
     public Avaliador getAvaliadorResponsavel() {
         return avaliadorResponsavel;
