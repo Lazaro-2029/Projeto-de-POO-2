@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da2a48fe-269b-4184-9019-3bebb52ed35c" name="Changes" comment="montagem de cada service e uma nova exception" />
+    <list default="true" id="da2a48fe-269b-4184-9019-3bebb52ed35c" name="Changes" comment="montagem de cada service e uma nova exception">
+      <change afterPath="$PROJECT_DIR$/ProjetoPOOEditora/src/main/java/br/org/editora/model/service/SystemSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,7 +99,7 @@
       <workItem from="1780186535978" duration="330000" />
       <workItem from="1780187167335" duration="5668000" />
       <workItem from="1780194089358" duration="8996000" />
-      <workItem from="1780247032379" duration="4707000" />
+      <workItem from="1780247032379" duration="5486000" />
     </task>
     <task id="LOCAL-00001" summary="criação da da base dos arquivos Service.">
       <option name="closed" value="true" />
@@ -122,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780280156529</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="montagem de cada service e uma nova exception">
+      <option name="closed" value="true" />
+      <created>1780280514230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780280514230</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
