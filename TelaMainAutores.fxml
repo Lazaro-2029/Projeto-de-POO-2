@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #48484814;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main">
+   <children>
+      <ImageView fitHeight="68.0" fitWidth="107.0" layoutX="497.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/2e327413943b1a23065a2cae73eab29208597fc5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="393.0" fitWidth="190.0" layoutX="5.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/Frame%201.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pesq" layoutX="222.0" layoutY="22.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="271.0" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="Pesquise um autor" textFill="#604848" />
+      <Button fx:id="fil" layoutX="508.0" layoutY="22.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="Filtro" textFill="#604848" />
+      <Button fx:id="aut1" layoutX="222.0" layoutY="128.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="271.0" style="-fx-border-color: #604848; -fx-background-color: #48484814;" textFill="#604848" />
+      <Button fx:id="e1" layoutX="497.0" layoutY="128.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="E" textFill="#604848" />
+      <Button layoutX="540.0" layoutY="128.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="X" textFill="#604848" fx:id="x1" />
+      <Button fx:id="aut2" layoutX="222.0" layoutY="182.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="271.0" style="-fx-border-color: #604848; -fx-background-color: #48484814;" textFill="#604848" />
+      <Button fx:id="e2" layoutX="497.0" layoutY="182.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="E" textFill="#604848" />
+      <Button layoutX="540.0" layoutY="182.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="X" textFill="#604848" fx:id="x2" />
+      <Button fx:id="aut3" layoutX="222.0" layoutY="234.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="271.0" style="-fx-border-color: #604848; -fx-background-color: #48484814;" textFill="#604848" />
+      <Button fx:id="e3" layoutX="497.0" layoutY="234.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="E" textFill="#604848" />
+      <Button layoutX="540.0" layoutY="234.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="X" textFill="#604848" fx:id="x3" />
+      <Button fx:id="aut4" layoutX="222.0" layoutY="285.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="271.0" style="-fx-border-color: #604848; -fx-background-color: #48484814;" textFill="#604848" />
+      <Button fx:id="e4" layoutX="497.0" layoutY="285.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="E" textFill="#604848" />
+      <Button layoutX="540.0" layoutY="285.0" mnemonicParsing="false" style="-fx-border-color: #604848; -fx-background-color: #48484814;" text="X" textFill="#604848" fx:id="x4" />
+      <Button fx:id="btO" layoutX="64.0" layoutY="155.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="77.0" style="-fx-border-color: #604848;" text="Obras" textFill="#604848" />
+      <Button fx:id="btAu" layoutX="54.0" layoutY="197.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="92.0" style="-fx-border-color: #604848;" text="Autores" textFill="#604848" />
+      <Button fx:id="btAva" layoutX="43.0" layoutY="240.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" style="-fx-border-color: #604848;" text="Avaliadores" textFill="#604848" />
+      <Button fx:id="btRel" layoutX="44.0" layoutY="284.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" style="-fx-border-color: #604848;" text="Relatório" textFill="#604848" />
+      <Button fx:id="btSair" layoutX="28.0" layoutY="332.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="155.0" style="-fx-border-color: #604848;" text="Finalizar Sessão" textFill="#604848" />
+      <Button fx:id="cadAut" layoutX="222.0" layoutY="347.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="155.0" style="-fx-border-color: #604848;" text="Cadastrar autor" textFill="#604848" />
+   </children>
+</Pane>

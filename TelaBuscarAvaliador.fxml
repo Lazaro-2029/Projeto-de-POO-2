@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #604848;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main">
+   <children>
+      <TextField fx:id="buscarNomeV" alignment="CENTER" layoutX="168.0" layoutY="89.0" prefHeight="39.0" prefWidth="263.0" promptText="Nome" />
+      <TextField fx:id="buscarEndV" alignment="CENTER" layoutX="168.0" layoutY="182.0" prefHeight="39.0" prefWidth="263.0" promptText="Endereço" />
+      <TextField fx:id="buscarEmailV" alignment="CENTER" layoutX="168.0" layoutY="135.0" prefHeight="39.0" prefWidth="263.0" promptText="Email" />
+      <Button fx:id="btVoltar" layoutX="143.0" layoutY="301.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="111.0" style="-fx-border-color: #604848;" text="Voltar" textFill="#604848" />
+      <Button fx:id="btBuscar" layoutX="346.0" layoutY="301.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="111.0" style="-fx-border-color: #604848;" text="Buscar" textFill="#604848" />
+      <TextField fx:id="buscarCpfV" alignment="CENTER" layoutX="169.0" layoutY="228.0" prefHeight="39.0" prefWidth="263.0" promptText="CPF" />
+      <Label alignment="CENTER" layoutX="154.0" layoutY="44.0" prefHeight="45.0" prefWidth="291.0" style="-fx-font-size: 30;" text="BUSCAR AVALIADOR" textFill="WHITE" />
+   </children>
+</Pane>

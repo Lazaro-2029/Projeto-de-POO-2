@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Main">
+   <children>
+      <ImageView fitHeight="176.0" fitWidth="277.0" layoutX="-4.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2e327413943b1a23065a2cae73eab29208597fc5.png" />
+         </image>
+      </ImageView>
+      <Region layoutX="256.0" prefHeight="401.0" prefWidth="346.0" style="-fx-background-color: #604848;" />
+      <PasswordField fx:id="senha" alignment="CENTER" layoutX="325.0" layoutY="231.0" promptText="Senha de acesso" />
+      <TextField fx:id="login" alignment="CENTER" layoutX="325.0" layoutY="173.0" promptText="Usuário" />
+      <Button fx:id="btAcessar" layoutX="324.0" layoutY="281.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" text="Acessar" />
+      <Button fx:id="btCadastro" layoutX="447.0" layoutY="280.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" text="Cadastro" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="331.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LOGIN.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
