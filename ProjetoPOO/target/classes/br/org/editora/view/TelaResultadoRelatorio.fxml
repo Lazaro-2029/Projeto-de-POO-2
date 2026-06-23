@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #604848;"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.org.editora.controller.ResultadoRelatorioController">
+  <children>
+    <Label alignment="CENTER" layoutX="100.0" layoutY="15.0" prefWidth="500.0"
+           text="OBRAS AVALIADAS NO PERÍODO" style="-fx-font-size:20; -fx-font-weight:bold;" textFill="white"/>
+    <Label fx:id="lblPeriodo" layoutX="100.0" layoutY="45.0" prefWidth="500.0"
+           alignment="CENTER" textFill="#ddcccc"/>
+    <TextArea fx:id="areaResultado" layoutX="30.0" layoutY="75.0" prefWidth="640.0" prefHeight="360.0"
+              editable="false" style="-fx-font-family:monospace; -fx-font-size:13;"/>
+    <Label fx:id="lblTotal" layoutX="30.0" layoutY="445.0" textFill="white" style="-fx-font-weight:bold;"/>
+    <Button fx:id="btVoltar" layoutX="290.0" layoutY="450.0" prefHeight="39.0" prefWidth="120.0"
+            text="Voltar" style="-fx-background-color:white; -fx-text-fill:#604848;"/>
+  </children>
+</Pane>

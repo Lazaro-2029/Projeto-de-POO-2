@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #604848;"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.org.editora.controller.BuscarAvaliadorController">
+  <children>
+    <Label alignment="CENTER" layoutX="100.0" layoutY="20.0" prefWidth="400.0"
+           text="BUSCAR AVALIADOR" style="-fx-font-size:26; -fx-font-weight:bold;" textFill="white"/>
+    <Label layoutX="168.0" layoutY="85.0"  text="Nome:" textFill="white"/>
+    <TextField fx:id="buscarNomeV" layoutX="168.0" layoutY="103.0" prefHeight="39.0" prefWidth="263.0" promptText="Nome do avaliador"/>
+    <Label layoutX="168.0" layoutY="150.0" text="CPF:"  textFill="white"/>
+    <TextField fx:id="buscarCpfV"  layoutX="168.0" layoutY="168.0" prefHeight="39.0" prefWidth="263.0" promptText="CPF do avaliador"/>
+    <Button fx:id="btVoltar" layoutX="143.0" layoutY="301.0" prefHeight="45.0" prefWidth="111.0"
+            text="Voltar"  style="-fx-background-color:white; -fx-text-fill:#604848;"/>
+    <Button fx:id="btBuscar" layoutX="346.0" layoutY="301.0" prefHeight="45.0" prefWidth="111.0"
+            text="Buscar"  style="-fx-background-color:white; -fx-text-fill:#604848;"/>
+  </children>
+</Pane>

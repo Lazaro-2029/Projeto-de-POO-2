@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #48484814;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.editora.controller.MainAvaliadoresController">
+  <children>
+    <Region layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #604848;" />
+    <Label layoutX="10.0" layoutY="20.0" style="-fx-font-size:16; -fx-font-weight:bold;" text="EDITORA" textFill="white" />
+    <Label layoutX="10.0" layoutY="50.0" style="-fx-font-size:12;" text="PUBLIXY" textFill="#ddcccc" />
+    <Button fx:id="btO" layoutX="15.0" layoutY="130.0" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color:transparent; -fx-text-fill:white; -fx-border-color:#7a5a5a;" text="Obras" />
+    <Button fx:id="btA" layoutX="15.0" layoutY="175.0" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color:transparent; -fx-text-fill:white; -fx-border-color:#7a5a5a;" text="Autores" />
+    <Button fx:id="btV" layoutX="15.0" layoutY="220.0" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color:#7a5a5a; -fx-text-fill:white;" text="Avaliadores" />
+    <Button fx:id="btR" layoutX="15.0" layoutY="265.0" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color:transparent; -fx-text-fill:white; -fx-border-color:#7a5a5a;" text="Relatórios" />
+    <Button fx:id="btS" layoutX="15.0" layoutY="348.0" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color:#3a2828; -fx-text-fill:white;" text="Finalizar Sessão" />
+
+    <Label layoutX="215.0" layoutY="10.0" style="-fx-font-size:20; -fx-font-weight:bold;" text="AVALIADORES" textFill="#604848" />
+    <Button fx:id="pesq" layoutX="210.0" layoutY="42.0" prefHeight="33.0" prefWidth="270.0" style="-fx-background-color:#f0e8e8; -fx-border-color:#604848;" text="Pesquisar avaliador" textFill="#604848" />
+
+    <Button fx:id="v1" layoutX="210.0" layoutY="110.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color:#f8f3f3; -fx-border-color:#ddd;" textFill="#333" />
+    <Button fx:id="e1" layoutX="470.0" layoutY="110.0" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color:#604848; -fx-text-fill:white;" text="E" />
+    <Button layoutX="510.0" layoutY="110.0" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color:#8b0000; -fx-text-fill:white;" text="X" fx:id="x1" />
+    <Button fx:id="v2" layoutX="210.0" layoutY="158.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color:#f8f3f3; -fx-border-color:#ddd;" textFill="#333" />
+    <Button fx:id="e2" layoutX="470.0" layoutY="158.0" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color:#604848; -fx-text-fill:white;" text="E" />
+    <Button layoutX="510.0" layoutY="158.0" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color:#8b0000; -fx-text-fill:white;" text="X" fx:id="x2" />
+    <Button fx:id="v3" layoutX="210.0" layoutY="206.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color:#f8f3f3; -fx-border-color:#ddd;" textFill="#333" />
+    <Button fx:id="e3" layoutX="470.0" layoutY="206.0" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color:#604848; -fx-text-fill:white;" text="E" />
+    <Button layoutX="510.0" layoutY="206.0" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color:#8b0000; -fx-text-fill:white;" text="X" fx:id="x3" />
+    <Button fx:id="v4" layoutX="210.0" layoutY="254.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color:#f8f3f3; -fx-border-color:#ddd;" textFill="#333" />
+    <Button fx:id="e4" layoutX="470.0" layoutY="254.0" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color:#604848; -fx-text-fill:white;" text="E" />
+    <Button layoutX="510.0" layoutY="254.0" prefHeight="39.0" prefWidth="35.0" style="-fx-background-color:#8b0000; -fx-text-fill:white;" text="X" fx:id="x4" />
+
+    <Button fx:id="cadV" layoutX="210.0" layoutY="348.0" prefHeight="35.0" prefWidth="195.0" style="-fx-background-color:#604848; -fx-text-fill:white;" text="Cadastrar avaliador" />
+  </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #604848;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.editora.controller.BuscarObraController">
+  <children>
+    <Label alignment="CENTER" layoutX="154.0" layoutY="20.0" prefWidth="291.0" style="-fx-font-size:28; -fx-font-weight:bold;" text="BUSCAR OBRA" textFill="white" />
+    <Label layoutX="168.0" layoutY="65.0" text="Título:" textFill="white" />
+    <TextField fx:id="buscarNomeO" layoutX="168.0" layoutY="83.0" prefHeight="39.0" prefWidth="263.0" promptText="Título da obra" />
+    <Label layoutX="168.0" layoutY="128.0" text="Autor:" textFill="white" />
+    <TextField fx:id="buscarAutorO" layoutX="168.0" layoutY="146.0" prefHeight="39.0" prefWidth="263.0" promptText="Nome do autor" />
+    <Label layoutX="168.0" layoutY="191.0" text="Status:" textFill="white" />
+    <TextField fx:id="buscarGenO" layoutX="168.0" layoutY="210.0" prefHeight="39.0" prefWidth="263.0" promptText="Status" />
+    <Label layoutX="168.0" layoutY="255.0" text="Ano:" textFill="white" />
+    <TextField fx:id="buscarAnoO" layoutX="168.0" layoutY="273.0" prefHeight="39.0" prefWidth="263.0" promptText="Ano" />
+    <Button fx:id="btVoltar" layoutX="143.0" layoutY="330.0" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color:white; -fx-text-fill:#604848;" text="Voltar" />
+    <Button fx:id="btBuscar" layoutX="346.0" layoutY="330.0" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color:white; -fx-text-fill:#604848;" text="Buscar" />
+  </children>
+</Pane>

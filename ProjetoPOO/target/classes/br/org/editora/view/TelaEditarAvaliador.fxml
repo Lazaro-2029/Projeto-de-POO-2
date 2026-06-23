@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #604848;"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.org.editora.controller.EditarAvaliadorController">
+  <children>
+    <Label alignment="CENTER" layoutX="100.0" layoutY="14.0" prefWidth="400.0"
+           text="EDITAR AVALIADOR" style="-fx-font-size:26; -fx-font-weight:bold;" textFill="white"/>
+    <TextField fx:id="edNomeV" layoutX="168.0" layoutY="75.0"  prefHeight="39.0" prefWidth="263.0" promptText="Nome"/>
+    <TextField fx:id="edEndV"  layoutX="168.0" layoutY="130.0" prefHeight="39.0" prefWidth="263.0" promptText="Endereço"/>
+    <TextField fx:id="edCpfV"  layoutX="168.0" layoutY="185.0" prefHeight="39.0" prefWidth="263.0" promptText="CPF"/>
+    <Button fx:id="btVoltar"  layoutX="148.0" layoutY="310.0" prefHeight="45.0" prefWidth="111.0"
+            text="Voltar"   style="-fx-background-color:white; -fx-text-fill:#604848;"/>
+    <Button fx:id="btEditar" layoutX="341.0" layoutY="310.0" prefHeight="45.0" prefWidth="111.0"
+            text="Salvar"   style="-fx-background-color:white; -fx-text-fill:#604848;"/>
+  </children>
+</Pane>

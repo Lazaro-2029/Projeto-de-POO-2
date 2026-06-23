@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #48484814;"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.org.editora.controller.ExcluirAutorController">
+  <children>
+    <Label layoutX="58.0" layoutY="31.0" prefHeight="156.0" prefWidth="485.0"
+           style="-fx-font-size: 30;" text="Deseja realmente excluir esse autor?" textFill="#604848"/>
+    <Label fx:id="nomeAutor" alignment="CENTER" layoutX="125.0" layoutY="160.0"
+           prefHeight="54.0" prefWidth="336.0" style="-fx-font-size: 20;" text="Autor"/>
+    <Button fx:id="btSim" layoutX="125.0" layoutY="270.0" prefHeight="96.0" prefWidth="128.0"
+            style="-fx-border-color: #604848; -fx-font-size: 30;" text="Sim" textFill="#604848"/>
+    <Button fx:id="btNao" layoutX="326.0" layoutY="270.0" prefHeight="96.0" prefWidth="128.0"
+            style="-fx-border-color: #604848; -fx-font-size: 30;" text="Não" textFill="#604848"/>
+  </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #604848;"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.org.editora.controller.EditarObraController">
+  <children>
+    <Label alignment="CENTER" layoutX="100.0" layoutY="13.0" prefWidth="400.0"
+           text="EDITAR OBRA" style="-fx-font-size:28; -fx-font-weight:bold;" textFill="white"/>
+    <TextField fx:id="edNomeO"  layoutX="168.0" layoutY="70.0"  prefHeight="39.0" prefWidth="263.0" promptText="Título"/>
+    <TextField fx:id="edAutorO" layoutX="168.0" layoutY="118.0" prefHeight="39.0" prefWidth="263.0" promptText="Autor"/>
+    <TextField fx:id="edGenO"   layoutX="168.0" layoutY="166.0" prefHeight="39.0" prefWidth="120.0" promptText="Gênero"/>
+    <TextField fx:id="edAnoO"   layoutX="300.0" layoutY="166.0" prefHeight="39.0" prefWidth="131.0" promptText="Ano"/>
+    <TextField fx:id="edAvaO"   layoutX="168.0" layoutY="214.0" prefHeight="39.0" prefWidth="120.0" promptText="CPF Avaliador"/>
+    <TextField fx:id="edStaO"   layoutX="300.0" layoutY="214.0" prefHeight="39.0" prefWidth="131.0" promptText="Status"/>
+    <Button fx:id="btVoltar" layoutX="148.0" layoutY="310.0" prefHeight="45.0" prefWidth="111.0"
+            text="Voltar"  style="-fx-background-color:white; -fx-text-fill:#604848;"/>
+    <Button fx:id="btEd"     layoutX="341.0" layoutY="310.0" prefHeight="45.0" prefWidth="111.0"
+            text="Salvar"  style="-fx-background-color:white; -fx-text-fill:#604848;"/>
+  </children>
+</Pane>

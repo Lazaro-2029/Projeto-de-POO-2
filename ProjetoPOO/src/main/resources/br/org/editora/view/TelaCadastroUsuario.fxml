@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #604848;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.editora.controller.CadastroUsuarioController">
+  <children>
+    <Label alignment="CENTER" layoutX="80.0" layoutY="20.0" prefWidth="440.0" style="-fx-font-size:26; -fx-font-weight:bold;" text="CADASTRO DE AUTOR" textFill="white" />
+    <Label layoutX="168.0" layoutY="72.0" text="Nome:" textFill="#ddcccc" />
+    <TextField fx:id="cadNome" layoutX="168.0" layoutY="90.0" prefHeight="39.0" prefWidth="263.0" promptText="Nome completo" />
+    <Label layoutX="168.0" layoutY="135.0" text="Endereço:" textFill="#ddcccc" />
+    <TextField fx:id="cadEnd" layoutX="168.0" layoutY="153.0" prefHeight="39.0" prefWidth="263.0" promptText="Endereço" />
+    <Label layoutX="168.0" layoutY="198.0" text="CPF:" textFill="#ddcccc" />
+    <TextField fx:id="cadCpf" layoutX="168.0" layoutY="216.0" prefHeight="39.0" prefWidth="263.0" promptText="CPF" />
+    <Button fx:id="btVoltar" layoutX="148.0" layoutY="320.0" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color:white; -fx-text-fill:#604848;" text="Voltar" />
+    <Button fx:id="btCadastrar" layoutX="341.0" layoutY="320.0" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color:white; -fx-text-fill:#604848;" text="Cadastrar" />
+  </children>
+</Pane>

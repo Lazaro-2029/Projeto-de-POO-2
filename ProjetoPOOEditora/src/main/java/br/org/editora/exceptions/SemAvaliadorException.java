@@ -1,5 +1,0 @@
-package br.org.editora.exceptions;
-
-public class SemAvaliadorException extends Exception {
-    public SemAvaliadorExeption(String msg){super(msg);}
-}

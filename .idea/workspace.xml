@@ -36,6 +36,65 @@
     &quot;accountId&quot;: &quot;4c618ad8-8b60-4a7d-abbd-8b4f12c6aa3b&quot;
   }
 }</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000007370913" />
+      <entry key="S30" value="1.004715028952819" />
+      <entry key="S60" value="1.2666413771552132" />
+      <entry key="M2" value="3.073200351029304" />
+      <entry key="M5" value="8.630770360157111" />
+      <entry key="M10" value="13.569351987855349" />
+      <entry key="M15" value="16.129022491466685" />
+      <entry key="M30" value="19.47814984467809" />
+      <entry key="H1" value="21.560508854552577" />
+      <entry key="H2" value="22.730684041494065" />
+      <entry key="H4" value="23.3522623429784" />
+      <entry key="D1" value="23.89016511486229" />
+      <entry key="W1" value="23.9842624609967" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.0226225693738076E-151" />
+      <entry key="S5" value="7.301632684926023E-61" />
+      <entry key="S10" value="1.2586796400257009E-30" />
+      <entry key="S30" value="2.158964337324355E-10" />
+      <entry key="S60" value="2.536164110798948E-5" />
+      <entry key="M2" value="0.00900824171287429" />
+      <entry key="M5" value="0.3645218541212324" />
+      <entry key="M10" value="1.404970052596008" />
+      <entry key="M15" value="2.251146340118168" />
+      <entry key="M30" value="3.651633073893615" />
+      <entry key="H1" value="4.67317401055073" />
+      <entry key="H2" value="5.293026334046679" />
+      <entry key="H4" value="5.634860955154349" />
+      <entry key="D1" value="5.937455924191008" />
+      <entry key="W1" value="5.991022869149326" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="4.333175770402872E-8" />
+      <entry key="MS500" value="0.0336791607826147" />
+      <entry key="S2" value="0.4283909773842849" />
+      <entry key="S5" value="0.712420037840268" />
+      <entry key="S10" value="0.8440497846964" />
+      <entry key="S30" value="0.9497099979883119" />
+      <entry key="S60" value="1.2370767590924212" />
+      <entry key="M2" value="3.0608530835535603" />
+      <entry key="M5" value="8.973045373492743" />
+      <entry key="M10" value="14.951931128723844" />
+      <entry key="M15" value="18.360119345222905" />
+      <entry key="M30" value="23.115886170297433" />
+      <entry key="H1" value="26.22540624723334" />
+      <entry key="H2" value="28.01918094665582" />
+      <entry key="H4" value="28.984752314289686" />
+      <entry key="D1" value="29.827210336552252" />
+      <entry key="W1" value="29.975226267249777" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
   &quot;fromUser&quot;: false
@@ -62,6 +121,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Administrator/Documents/GitHub/etste/EditoraPublixy/ProjetoPOO/untitled/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -82,6 +142,14 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="da2a48fe-269b-4184-9019-3bebb52ed35c" name="Changes" comment="" />
@@ -100,6 +168,9 @@
       <workItem from="1780187167335" duration="5668000" />
       <workItem from="1780194089358" duration="8996000" />
       <workItem from="1780247032379" duration="5486000" />
+      <workItem from="1782174514621" duration="2215000" />
+      <workItem from="1782232095785" duration="210000" />
+      <workItem from="1782232410205" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="criação da da base dos arquivos Service.">
       <option name="closed" value="true" />
@@ -164,6 +235,11 @@
           <line>7</line>
           <properties field="nome" class="br.org.editora.model.entities.Usuario" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../etste/EditoraPublixy/ProjetoPOO/untitled/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
