@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #604848;"
+<Pane prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: #604848;"
       xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="br.org.editora.controller.CadastroAvaliadorController">
   <children>
     <Label alignment="CENTER" layoutX="100.0" layoutY="20.0" prefWidth="400.0"
            text="CADASTRO DE AVALIADOR" style="-fx-font-size:24; -fx-font-weight:bold;" textFill="white"/>
-    <TextField fx:id="cadNomeV" layoutX="168.0" layoutY="80.0"  prefHeight="39.0" prefWidth="263.0" promptText="Nome"/>
-    <TextField fx:id="cadEndV"  layoutX="168.0" layoutY="135.0" prefHeight="39.0" prefWidth="263.0" promptText="Endereço"/>
-    <TextField fx:id="cadCpfV"  layoutX="168.0" layoutY="190.0" prefHeight="39.0" prefWidth="263.0" promptText="CPF"/>
-    <Button fx:id="btVoltar"    layoutX="148.0" layoutY="310.0" prefHeight="45.0" prefWidth="111.0"
+    <Label layoutX="168.0" layoutY="72.0"  text="Nome:"     textFill="#ddcccc"/>
+    <TextField fx:id="cadNomeV" layoutX="168.0" layoutY="90.0"  prefHeight="39.0" prefWidth="263.0" promptText="Nome completo"/>
+    <Label layoutX="168.0" layoutY="135.0" text="Endereco:" textFill="#ddcccc"/>
+    <TextField fx:id="cadEndV"  layoutX="168.0" layoutY="153.0" prefHeight="39.0" prefWidth="263.0" promptText="Endereco"/>
+    <Label layoutX="168.0" layoutY="198.0" text="CPF:"      textFill="#ddcccc"/>
+    <TextField fx:id="cadCpfV"  layoutX="168.0" layoutY="216.0" prefHeight="39.0" prefWidth="263.0" promptText="000.000.000-00"/>
+    <Label layoutX="168.0" layoutY="261.0" text="Senha:"    textFill="#ddcccc"/>
+    <PasswordField fx:id="cadSenhaV" layoutX="168.0" layoutY="279.0" prefHeight="39.0" prefWidth="263.0" promptText="Minimo 6 caracteres"/>
+    <Label layoutX="168.0" layoutY="324.0" text="Confirmar Senha:" textFill="#ddcccc"/>
+    <PasswordField fx:id="cadSenhaConfirmV" layoutX="168.0" layoutY="342.0" prefHeight="39.0" prefWidth="263.0" promptText="Repita a senha"/>
+    <Button fx:id="btVoltar"    layoutX="148.0" layoutY="410.0" prefHeight="45.0" prefWidth="111.0"
             text="Voltar"    style="-fx-background-color:white; -fx-text-fill:#604848;"/>
-    <Button fx:id="btCadastrar" layoutX="341.0" layoutY="310.0" prefHeight="45.0" prefWidth="111.0"
+    <Button fx:id="btCadastrar" layoutX="341.0" layoutY="410.0" prefHeight="45.0" prefWidth="111.0"
             text="Cadastrar" style="-fx-background-color:white; -fx-text-fill:#604848;"/>
   </children>
 </Pane>
